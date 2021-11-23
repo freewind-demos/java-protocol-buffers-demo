@@ -1,14 +1,14 @@
 package demo;
 
-import demo.protobuf.generated.Data;
+import demo.protobuf.generated.Message;
 
 public class Main {
 
     public static void main(String[] args) {
-        Data.Message message = Data.Message.newBuilder()
+        Message message = Message.newBuilder()
                 .setNumber(111)
                 .setText("aaa")
-                .setEnum(Data.Message.Enum.WHITE)
+                .setEnum(Message.Enum.WHITE)
                 .build();
         System.out.println(message);
     }

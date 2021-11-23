@@ -6,7 +6,7 @@ brew install protobuf
 protoc --java_out=./src/main/java ./data.proto
 ```
 
-将会在`src/main/java/demo/protobuf/generated`生成相关的Java文件（`Data.java`）。
+将会在`src/main/java/demo/protobuf/generated`生成相关的Java文件。
 
 需要注意的是，生成的Java代码中，只包含定义的`message`，而没有`service`。
 
